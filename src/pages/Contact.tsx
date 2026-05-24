@@ -199,7 +199,7 @@ const Contact = () => {
                   <MapPin className="w-12 h-12 text-red-600 mx-auto mb-4" />
                   <p className="text-gray-600">Magenche, Kenya</p>
                   <a 
-                    href="https://maps.google.com/?q=Magenche,Kenya"
+                    href="https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-red-600 hover:underline mt-2 inline-block"

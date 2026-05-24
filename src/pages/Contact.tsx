@@ -54,14 +54,14 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      content: 'info@autohubkenya.com',
-      link: 'mailto:info@autohubkenya.com',
+      content: 'jrmachuki@gmail.com',
+      link: 'mailto:jrmachuki@gmail.com',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Address',
       content: 'Magenche, Kenya',
-      link: 'https://maps.google.com/?q=Magenche,Kenya',
+      link: 'https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/',
     },
     {
       icon: <Clock className="w-6 h-6" />,

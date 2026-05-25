@@ -21,7 +21,7 @@ import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
 import axios from 'axios';
 
-const API_URL = 'https://scott-instructors-challenged-intake.trycloudflare.com/api';
+const API_URL = 'https://atm-enables-investigator-jane.trycloudflare.com/api';
 
 interface Payment {
   id: number;

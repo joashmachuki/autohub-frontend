@@ -20,7 +20,7 @@ import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
 import axios from 'axios';
 
-const API_URL = 'https://atm-enables-investigator-jane.trycloudflare.com/api';
+const API_URL = 'https://documentary-wright-typical-priorities.trycloudflare.com/api';
 
 interface Inquiry {
   id: number;

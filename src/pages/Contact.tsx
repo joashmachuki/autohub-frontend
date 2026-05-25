@@ -19,7 +19,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import axios from 'axios';
 
-const API_URL = 'https://documentary-wright-typical-priorities.trycloudflare.com/api';
+const API_URL = 'https://scott-instructors-challenged-intake.trycloudflare.com/api';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -54,14 +54,14 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      content: 'jrmachuki@gmail.com',
-      link: 'mailto:jrmachuki@gmail.com',
+      content: 'info@autohubkenya.com',
+      link: 'mailto:info@autohubkenya.com',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Address',
       content: 'Magenche, Kenya',
-      link: 'https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/',
+      link: 'https://maps.google.com/?q=Magenche,Kenya',
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -199,7 +199,7 @@ const Contact = () => {
                   <MapPin className="w-12 h-12 text-red-600 mx-auto mb-4" />
                   <p className="text-gray-600">Magenche, Kenya</p>
                   <a 
-                    href="https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/"
+                    href="https://maps.google.com/?q=Magenche,Kenya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-red-600 hover:underline mt-2 inline-block"

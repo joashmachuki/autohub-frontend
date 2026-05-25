@@ -142,16 +142,16 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="mailto:jrmachuki@gmail.com"
+                  href="mailto:info@autohubkenya.com"
                   className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors"
                 >
                   <Mail className="w-5 h-5 mt-0.5 text-red-500" />
-                  <span className="text-sm">jrmachuki@gmail.com</span>
+                  <span className="text-sm">info@autohubkenya.com</span>
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/"
+                  href="https://maps.google.com/?q=Magenche,Kenya"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors"

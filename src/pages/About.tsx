@@ -279,7 +279,7 @@ const About = () => {
                   <Mail className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-gray-600">jrmachuki@gmail.com</p>
+                <p className="text-gray-600">info@autohubkenya.com</p>
               </CardContent>
             </Card>
           </div>

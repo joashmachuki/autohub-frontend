@@ -18,7 +18,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import axios from 'axios';
 
-const API_URL = 'https://documentary-wright-typical-priorities.trycloudflare.com/api';
+const API_URL = 'https://scott-instructors-challenged-intake.trycloudflare.com/api';
 
 const SellCar = () => {
   const [formData, setFormData] = useState({
@@ -348,7 +348,7 @@ const SellCar = () => {
                   +254 720 549 567
                 </Button>
               </a>
-              <a href="mailto:jrmachuki@gmail.com">
+              <a href="mailto:info@autohubkenya.com">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600">
                   <Mail className="mr-2 w-5 h-5" />
                   Email Us

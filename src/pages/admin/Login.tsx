@@ -117,9 +117,6 @@ const AdminLogin = () => {
             </form>
 
             <div className="mt-6 text-center text-sm text-gray-500">
-              <p>Default credentials:</p>
-              <p className="font-mono">Username: admin</p>
-              <p className="font-mono">Password: admin123</p>
             </div>
           </CardContent>
         </Card>

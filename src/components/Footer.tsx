@@ -142,22 +142,22 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="mailto:info@autohubkenya.com"
+                  href="mailto:jrmachuki@gmail.com"
                   className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors"
                 >
                   <Mail className="w-5 h-5 mt-0.5 text-red-500" />
-                  <span className="text-sm">info@autohubkenya.com</span>
+                  <span className="text-sm">jrmachuki@gmail.com</span>
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://maps.google.com/?q=Magenche,Kenya"
+                  href="https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors"
                 >
                   <MapPin className="w-5 h-5 mt-0.5 text-red-500" />
-                  <span className="text-sm">Magenche, Kenya</span>
+                  <span className="text-sm">JP3H+63X Magadi Rd, Kenya</span>
                 </a>
               </li>
             </ul>

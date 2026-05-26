@@ -348,7 +348,7 @@ const SellCar = () => {
                   +254 720 549 567
                 </Button>
               </a>
-              <a href="mailto:info@autohubkenya.com">
+              <a href="mailto:jrmachuki@gmail.com">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600">
                   <Mail className="mr-2 w-5 h-5" />
                   Email Us

@@ -54,19 +54,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      content: 'info@autohubkenya.com',
-      link: 'mailto:info@autohubkenya.com',
+      content: 'jrmachuki@gmail.com',
+      link: 'mailto:jrmachuki@gmail.com',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Address',
-      content: 'Magenche, Kenya',
-      link: 'https://maps.google.com/?q=Magenche,Kenya',
+      content: 'JP3H+63X Magadi Rd, Kenya',
+      link: 'https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/',
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: 'Working Hours',
-      content: 'Mon - Sat: 8AM - 6PM',
+      content: 'Mon - Mon: 8AM - 6PM',
       link: null,
     },
   ];
@@ -197,9 +197,9 @@ const Contact = () => {
               <div className="bg-gray-200 rounded-lg h-80 mb-8 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                  <p className="text-gray-600">Magenche, Kenya</p>
+                  <p className="text-gray-600">JP3H+63X Magadi Rd, Kenya</p>
                   <a 
-                    href="https://maps.google.com/?q=Magenche,Kenya"
+                    href="https://www.google.com/maps/search/JP3H+63X+Magadi+Rd+Kenya/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-red-600 hover:underline mt-2 inline-block"

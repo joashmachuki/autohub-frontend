@@ -261,7 +261,7 @@ const About = () => {
                   <MapPin className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Location</h3>
-                <p className="text-gray-600">Magenche, Kenya</p>
+                <p className="text-gray-600">JP3H+63X Magadi Rd, Kenya</p>
               </CardContent>
             </Card>
             <Card className="text-center">
@@ -279,7 +279,7 @@ const About = () => {
                   <Mail className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-gray-600">info@autohubkenya.com</p>
+                <p className="text-gray-600">jrmachuki@gmail.com</p>
               </CardContent>
             </Card>
           </div>

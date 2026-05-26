@@ -20,7 +20,7 @@ import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
 import axios from 'axios';
 
-const API_URL = 'https://decor-dressed-least-indices.trycloudflare.com/api';
+const API_URL = 'http://localhost:5000/api';
 
 interface Inquiry {
   id: number;

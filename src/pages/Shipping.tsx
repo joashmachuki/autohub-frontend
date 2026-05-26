@@ -245,13 +245,13 @@ const Shipping = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600">
+                <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
                   Contact Us
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <a href="tel:+254720549567">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600">
+                <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
                   <Phone className="mr-2 w-5 h-5" />
                   Call Now
                 </Button>

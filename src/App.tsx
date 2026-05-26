@@ -22,11 +22,11 @@ function App() {
       <div className="min-h-screen bg-white">
         <Routes>
           {/* Admin Routes - No Header/Footer */}
-          <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="/admin/vehicles" element={<AdminVehicles />} />
-          <Route path="/admin/inquiries" element={<AdminInquiries />} />
-          <Route path="/admin/payments" element={<AdminPayments />} />
+          <Route path="/Jerry@-2020/login" element={<AdminLogin />} />
+          <Route path="/Jerry@-2020/dashboard" element={<AdminDashboard />} />
+          <Route path="/Jerry@-2020/vehicles" element={<AdminVehicles />} />
+          <Route path="/Jerry@-2020/inquiries" element={<AdminInquiries />} />
+          <Route path="/Jerry@-2020/payments" element={<AdminPayments />} />
           
           {/* Public Routes */}
           <Route path="*" element={

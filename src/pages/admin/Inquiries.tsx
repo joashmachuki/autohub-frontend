@@ -66,15 +66,15 @@ const AdminInquiries = () => {
   const checkAuth = () => {
     const token = localStorage.getItem('adminToken');
     if (!token) {
-      navigate('/admin/login');
+      navigate('/Jerry@-2020/login');
     }
   };
 
   const fetchData = async () => {
     try {
       const [inquiriesRes, sellRes] = await Promise.all([
-        axios.get(`${API_URL}/admin/inquiries`),
-        axios.get(`${API_URL}/admin/sell-requests`),
+        axios.get(`${API_URL}/Jerry@-2020/inquiries`),
+        axios.get(`${API_URL}/Jerry@-2020/sell-requests`),
       ]);
       setInquiries(inquiriesRes.data);
       setSellRequests(sellRes.data);
@@ -96,12 +96,12 @@ const AdminInquiries = () => {
   const handleLogout = () => {
     localStorage.removeItem('adminToken');
     localStorage.removeItem('adminUsername');
-    navigate('/admin/login');
+    navigate('/Jerry@-2020/login');
   };
 
   const updateInquiryStatus = async (id: number, status: string) => {
     try {
-      await axios.put(`${API_URL}/admin/inquiries/${id}`, { status });
+      await axios.put(`${API_URL}/Jerry@-2020/inquiries/${id}`, { status });
       toast.success('Status updated');
       fetchData();
     } catch (error) {
@@ -112,7 +112,7 @@ const AdminInquiries = () => {
 
   const updateSellRequestStatus = async (id: number, status: string) => {
     try {
-      await axios.put(`${API_URL}/admin/sell-requests/${id}`, { status });
+      await axios.put(`${API_URL}/Jerry@-2020/sell-requests/${id}`, { status });
       toast.success('Status updated');
       fetchData();
     } catch (error) {
@@ -134,10 +134,10 @@ const AdminInquiries = () => {
   );
 
   const menuItems = [
-    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/admin/dashboard' },
-    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/admin/vehicles' },
-    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/admin/inquiries', active: true },
-    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/admin/payments' },
+    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/Jerry@-2020/dashboard' },
+    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/Jerry@-2020/vehicles' },
+    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/Jerry@-2020/inquiries', active: true },
+    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/Jerry@-2020/payments' },
   ];
 
   return (

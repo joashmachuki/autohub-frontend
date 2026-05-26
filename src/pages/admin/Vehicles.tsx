@@ -87,7 +87,7 @@ const AdminVehicles = () => {
   const checkAuth = () => {
     const token = localStorage.getItem('adminToken');
     if (!token) {
-      navigate('/admin/login');
+      navigate('/Jerry@-2020/login');
     }
   };
 
@@ -110,7 +110,7 @@ const AdminVehicles = () => {
   const handleLogout = () => {
     localStorage.removeItem('adminToken');
     localStorage.removeItem('adminUsername');
-    navigate('/admin/login');
+    navigate('/Jerry@-2020/login');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -203,10 +203,10 @@ const AdminVehicles = () => {
   );
 
   const menuItems = [
-    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/admin/dashboard' },
-    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/admin/vehicles', active: true },
-    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/admin/inquiries' },
-    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/admin/payments' },
+    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/Jerry@-2020/dashboard' },
+    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/Jerry@-2020/vehicles', active: true },
+    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/Jerry@-2020/inquiries' },
+    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/Jerry@-2020/payments' },
   ];
 
   return (

@@ -115,7 +115,7 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+                <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-red-600">
                   Contact Us
                 </Button>
               </Link>
@@ -312,7 +312,7 @@ const Home = () => {
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+              <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-red-600">
                 Contact Us
               </Button>
             </Link>

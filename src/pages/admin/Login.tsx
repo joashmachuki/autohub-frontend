@@ -24,14 +24,14 @@ const AdminLogin = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/admin/login`, formData);
+      const response = await axios.post(`${API_URL}/Jerry@-2020/login`, formData);
       
       if (response.data.success) {
         // Store token in localStorage
         localStorage.setItem('adminToken', response.data.token);
         localStorage.setItem('adminUsername', response.data.username);
         toast.success('Login successful!');
-        navigate('/admin/dashboard');
+        navigate('/Jerry@-2020/dashboard');
       } else {
         toast.error('Invalid credentials');
       }
@@ -41,7 +41,7 @@ const AdminLogin = () => {
         localStorage.setItem('adminToken', 'demo-token');
         localStorage.setItem('adminUsername', 'admin');
         toast.success('Login successful! (Demo mode)');
-        navigate('/admin/dashboard');
+        navigate('/Jerry@-2020/dashboard');
       } else {
         toast.error('Invalid credentials');
       }

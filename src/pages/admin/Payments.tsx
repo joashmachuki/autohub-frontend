@@ -50,13 +50,13 @@ const AdminPayments = () => {
   const checkAuth = () => {
     const token = localStorage.getItem('adminToken');
     if (!token) {
-      navigate('/admin/login');
+      navigate('/Jerry@-2020/login');
     }
   };
 
   const fetchPayments = async () => {
     try {
-      const response = await axios.get(`${API_URL}/admin/payments`);
+      const response = await axios.get(`${API_URL}/Jerry@-2020/payments`);
       setPayments(response.data);
     } catch (error) {
       console.error('Error fetching payments:', error);
@@ -74,7 +74,7 @@ const AdminPayments = () => {
   const handleLogout = () => {
     localStorage.removeItem('adminToken');
     localStorage.removeItem('adminUsername');
-    navigate('/admin/login');
+    navigate('/Jerry@-2020/login');
   };
 
   const updatePaymentStatus = async (id: number, status: string) => {
@@ -102,10 +102,10 @@ const AdminPayments = () => {
     .reduce((sum, p) => sum + p.amount, 0);
 
   const menuItems = [
-    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/admin/dashboard' },
-    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/admin/vehicles' },
-    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/admin/inquiries' },
-    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/admin/payments', active: true },
+    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/Jerry@-2020/dashboard' },
+    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/Jerry@-2020/vehicles' },
+    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/Jerry@-2020/inquiries' },
+    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/Jerry@-2020/payments', active: true },
   ];
 
   return (

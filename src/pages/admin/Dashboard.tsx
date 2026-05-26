@@ -83,13 +83,13 @@ const AdminDashboard = () => {
   const checkAuth = () => {
     const token = localStorage.getItem('adminToken');
     if (!token) {
-      navigate('/admin/login');
+      navigate('/Jerry@-2020/login');
     }
   };
 
   const fetchStats = async () => {
     try {
-      const response = await axios.get(`${API_URL}/admin/stats`);
+      const response = await axios.get(`${API_URL}/Jerry@-2020/stats`);
       setStats(response.data);
     } catch (error) {
       setStats({
@@ -109,7 +109,7 @@ const AdminDashboard = () => {
     localStorage.removeItem('adminToken');
     localStorage.removeItem('adminUsername');
     toast.success('Logged out successfully');
-    navigate('/admin/login');
+    navigate('/Jerry@-2020/login');
   };
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -180,17 +180,17 @@ const AdminDashboard = () => {
   };
 
   const menuItems = [
-    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/admin/dashboard', active: true },
-    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/admin/vehicles' },
-    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/admin/inquiries' },
-    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/admin/payments' },
+    { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/Jerry@-2020/dashboard', active: true },
+    { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/Jerry@-2020/vehicles' },
+    { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/Jerry@-2020/inquiries' },
+    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/Jerry@-2020/payments' },
   ];
 
   const statCards = [
-    { title: 'Total Vehicles', value: stats.total_vehicles, icon: <Car className="w-6 h-6" />, color: 'bg-blue-500', link: '/admin/vehicles' },
-    { title: 'Available', value: stats.available_vehicles, icon: <Package className="w-6 h-6" />, color: 'bg-green-500', link: '/admin/vehicles' },
-    { title: 'Pending Inquiries', value: stats.pending_inquiries, icon: <MessageSquare className="w-6 h-6" />, color: 'bg-yellow-500', link: '/admin/inquiries' },
-    { title: 'Total Revenue', value: `KES ${(stats.total_revenue / 1000000).toFixed(1)}M`, icon: <DollarSign className="w-6 h-6" />, color: 'bg-red-500', link: '/admin/payments' },
+    { title: 'Total Vehicles', value: stats.total_vehicles, icon: <Car className="w-6 h-6" />, color: 'bg-blue-500', link: '/Jerry@-2020/vehicles' },
+    { title: 'Available', value: stats.available_vehicles, icon: <Package className="w-6 h-6" />, color: 'bg-green-500', link: '/Jerry@-2020/vehicles' },
+    { title: 'Pending Inquiries', value: stats.pending_inquiries, icon: <MessageSquare className="w-6 h-6" />, color: 'bg-yellow-500', link: '/Jerry@-2020/inquiries' },
+    { title: 'Total Revenue', value: `KES ${(stats.total_revenue / 1000000).toFixed(1)}M`, icon: <DollarSign className="w-6 h-6" />, color: 'bg-red-500', link: '/Jerry@-2020/payments' },
   ];
 
   return (
@@ -443,18 +443,18 @@ const AdminDashboard = () => {
               <CardHeader><CardTitle>Quick Actions</CardTitle></CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <button onClick={() => navigate('/admin/vehicles')} className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                  <button onClick={() => navigate('/Jerry@-2020/vehicles')} className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                     <div className="flex items-center gap-3"><Car className="w-5 h-5 text-red-600" /><span>Manage All Vehicles</span></div>
                     <ArrowRight className="w-4 h-4 text-gray-400" />
                   </button>
-                  <button onClick={() => navigate('/admin/inquiries')} className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                  <button onClick={() => navigate('/Jerry@-2020/inquiries')} className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                     <div className="flex items-center gap-3">
                       <MessageSquare className="w-5 h-5 text-yellow-600" /><span>View Inquiries</span>
                       {stats.pending_inquiries > 0 && <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">{stats.pending_inquiries}</span>}
                     </div>
                     <ArrowRight className="w-4 h-4 text-gray-400" />
                   </button>
-                  <button onClick={() => navigate('/admin/payments')} className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                  <button onClick={() => navigate('/Jerry@-2020/payments')} className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                     <div className="flex items-center gap-3"><CreditCard className="w-5 h-5 text-green-600" /><span>View Payments</span></div>
                     <ArrowRight className="w-4 h-4 text-gray-400" />
                   </button>

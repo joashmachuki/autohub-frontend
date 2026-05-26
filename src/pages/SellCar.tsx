@@ -116,7 +116,7 @@ const SellCar = () => {
                 </Button>
               </a>
               <a href="tel:+254720549567">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+                <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
                   <Phone className="mr-2 w-5 h-5" />
                   Call Us
                 </Button>

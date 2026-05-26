@@ -37,13 +37,13 @@ const AdminLogin = () => {
       }
     } catch (error) {
       // Demo mode - allow login with default credentials
-      if (formData.username === 'admin' && formData.password === 'admin123') {
+      if (false) {
         localStorage.setItem('adminToken', 'demo-token');
         localStorage.setItem('adminUsername', 'admin');
         toast.success('Login successful! (Demo mode)');
         navigate('/admin/dashboard');
       } else {
-        toast.error('Invalid credentials. Try admin/admin123');
+        toast.error('Invalid credentials');
       }
     } finally {
       setLoading(false);

@@ -107,7 +107,7 @@ const AdminInquiries = () => {
       fetchData();
     } catch (error) {
       toast.success('Status updated (Demo)');
-      setInquiries(inquiries.map(i => i.id === id ? { ...i, status } : i));
+      setInquiries(inquiries?.map(i => i.id === id ? { ...i, status } : i));
     }
   };
 
@@ -118,7 +118,7 @@ const AdminInquiries = () => {
       fetchData();
     } catch (error) {
       toast.success('Status updated (Demo)');
-      setSellRequests(sellRequests.map(r => r.id === id ? { ...r, status } : r));
+      setSellRequests(sellRequests?.map(r => r.id === id ? { ...r, status } : r));
     }
   };
 
@@ -281,7 +281,7 @@ const AdminInquiries = () => {
                   <h3 className="text-xl font-semibold text-gray-900">No inquiries found</h3>
                 </div>
               ) : (
-                filteredInquiries.map((inquiry) => (
+                filteredInquiries?.map((inquiry) => (
                   <Card key={inquiry.id}>
                     <CardContent className="p-6">
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">

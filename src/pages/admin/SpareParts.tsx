@@ -51,7 +51,7 @@ export default function AdminSpareParts() {
   const updateStatus = async (id: number, status: string) => {
     try {
       await axios.put(`${API_URL}/Jerry@-2020/spare-parts/${id}`, { status });
-      setRequests(requests.map(r => r.id === id ? { ...r, status } : r));
+      setRequests(requests?.map(r => r.id === id ? { ...r, status } : r));
     } catch (error) {
       console.error('Failed to update:', error);
     }
@@ -104,7 +104,7 @@ export default function AdminSpareParts() {
           <div className="text-center py-16 text-gray-500">No spare parts requests yet</div>
         ) : (
           <div className="space-y-4">
-            {requests.map((req) => (
+            {requests?.map((req) => (
               <Card key={req.id} className="overflow-hidden">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between">

@@ -140,7 +140,7 @@ const Home = () => {
             {featuredNewCars.length === 0 ? (
               <ComingSoon message="New cars will be available shortly" />
             ) : (
-              featuredNewCars.map((car) => <VehicleCard key={car.id} vehicle={car} />)
+              featuredNewCars?.map((car) => <VehicleCard key={car.id} vehicle={car} />)
             )}
           </div>
         </div>
@@ -162,7 +162,7 @@ const Home = () => {
             {featuredUsedCars.length === 0 ? (
               <ComingSoon message="Used cars will be available shortly" />
             ) : (
-              featuredUsedCars.map((car) => <VehicleCard key={car.id} vehicle={car} />)
+              featuredUsedCars?.map((car) => <VehicleCard key={car.id} vehicle={car} />)
             )}
           </div>
         </div>
@@ -184,7 +184,7 @@ const Home = () => {
             {featuredEbikes.length === 0 ? (
               <ComingSoon message="E-bikes and motorcycles will be available shortly" />
             ) : (
-              featuredEbikes.map((bike) => <VehicleCard key={bike.id} vehicle={bike} />)
+              featuredEbikes?.map((bike) => <VehicleCard key={bike.id} vehicle={bike} />)
             )}
           </div>
         </div>

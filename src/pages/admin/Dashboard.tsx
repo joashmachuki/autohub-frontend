@@ -211,7 +211,7 @@ const AdminDashboard = () => {
         </div>
 
         <nav className="flex-1 px-4">
-          {menuItems.map((item) => (
+          {menuItems?.map((item) => (
             <button
               key={item.path}
               onClick={() => navigate(item.path)}
@@ -247,7 +247,7 @@ const AdminDashboard = () => {
         </header>
 
         <div className="md:hidden bg-gray-900 text-white px-4 py-2 flex gap-2 overflow-x-auto">
-          {menuItems.map((item) => (
+          {menuItems?.map((item) => (
             <button key={item.path} onClick={() => navigate(item.path)} className={`flex items-center gap-2 px-4 py-2 rounded-lg whitespace-nowrap ${item.active ? 'bg-red-600' : 'bg-gray-800'}`}>
               {item.icon}
               {item.label}
@@ -257,7 +257,7 @@ const AdminDashboard = () => {
 
         <main className="flex-1 p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {statCards.map((card, index) => (
+            {statCards?.map((card, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate(card.link)}>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
@@ -414,7 +414,7 @@ const AdminDashboard = () => {
                     </div>
                     {previewImages.length > 0 && (
                       <div className="flex gap-2 mt-3 flex-wrap">
-                        {previewImages.map((src, idx) => (
+                        {previewImages?.map((src, idx) => (
                           <div key={idx} className="relative w-20 h-20 rounded-lg overflow-hidden border">
                             <img src={src} alt={`Preview ${idx + 1}`} className="w-full h-full object-cover" />
                           </div>

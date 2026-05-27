@@ -42,24 +42,6 @@ const About = () => {
     },
   ];
 
-  const team = [
-    {
-      name: 'John Kamau',
-      role: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
-    },
-    {
-      name: 'Sarah Ochieng',
-      role: 'Sales Director',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400',
-    },
-    {
-      name: 'Michael Otieno',
-      role: 'Operations Manager',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400',
-    },
-  ];
-
   return (
     <div className="pt-28 md:pt-32 pb-16">
       {/* Hero Section */}
@@ -222,25 +204,23 @@ const About = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our CEO</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              The dedicated professionals behind AutoHub Kenya.
+              The visionary leader behind AutoHub Kenya.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center overflow-hidden">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold">{member.name}</h3>
-                  <p className="text-gray-500">{member.role}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-sm mx-auto">
+            <Card className="text-center overflow-hidden">
+              <img
+                src="/ceo.jpg"
+                alt="CEO"
+                className="w-full h-80 object-cover"
+              />
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold">Jeremiah Machuki</h3>
+                <p className="text-red-600 font-medium">Founder & CEO</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

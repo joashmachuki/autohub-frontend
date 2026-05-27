@@ -48,51 +48,15 @@ const Vehicles = () => {
     try {
       const params = new URLSearchParams();
       Object.entries(filters).forEach(([key, value]) => {
-        if (value && value !== 'all') params.append(key, value);
+        if (value && value !== 'all') {
+          const apiKey = key === 'type' ? 'vehicle_type' : key;
+          params.append(apiKey, value);
+        }
       });
       const response = await axios.get(`${API_URL}/vehicles?${params}`);
       setVehicles(response.data);
     } catch (error) {
-      setVehicles([
-        {
-          id: 2,
-          title: 'Toyota Land Cruiser',
-          vehicle_type: 'suv',
-          condition: 'used',
-          brand: 'Toyota',
-          model: 'Land Cruiser',
-          year: 2023,
-          price: 5800000,
-          mileage: 4600,
-          fuel_type: 'Diesel',
-          transmission: 'Automatic',
-          color: 'White',
-          seats: 5,
-          description: 'Well maintained Toyota Land Cruiser with full service history.',
-          images: ['/uploads/vehicles/5d6b83415fc943348074daad8d0ca99e_WechatIMG160.jpg'],
-          featured: true,
-          stock_status: 'available'
-        },
-        {
-          id: 3,
-          title: '2024 BMW X5 M Sport',
-          vehicle_type: 'suv',
-          condition: 'new',
-          brand: 'BMW',
-          model: 'X5',
-          year: 2024,
-          price: 12500000,
-          mileage: 0,
-          fuel_type: 'Petrol',
-          transmission: 'Automatic',
-          color: 'Black',
-          seats: 5,
-          description: 'Brand new BMW X5 with M Sport package.',
-          images: ['/uploads/vehicles/bmw-x5.jpg'],
-          featured: true,
-          stock_status: 'available'
-        }
-      ]);
+      setVehicles([]);
     } finally {
       setLoading(false);
     }
@@ -201,8 +165,17 @@ const Vehicles = () => {
               </div>
             ) : vehicles.length === 0 ? (
               <div className="text-center py-16">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">No vehicles found</h3>
-                {hasActiveFilters && <Button onClick={clearFilters} variant="outline">Clear All Filters</Button>}
+                {filters.type === 'ebike' || filters.type === 'motorcycle' ? (
+                  <>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Coming Soon</h3>
+                    <p className="text-gray-500">E-bikes and motorcycles will be available shortly. Stay tuned!</p>
+                  </>
+                ) : (
+                  <>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">No vehicles found</h3>
+                    {hasActiveFilters && <Button onClick={clearFilters} variant="outline">Clear All Filters</Button>}
+                  </>
+                )}
               </div>
             ) : (
               <div className={viewMode === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6' : 'space-y-4'}>

@@ -64,7 +64,7 @@ const Header = () => {
       items: [
         { name: 'Electric Bikes', path: '/ebikes' },
         { name: 'Motorcycles', path: '/motorcycles' },
-        { name: 'Spare Parts', path: '/ebikes#parts' },
+        { name: 'Spare Parts', path: '/spare-parts' },
       ],
     },
     { name: 'About', path: '/about', dropdown: false },

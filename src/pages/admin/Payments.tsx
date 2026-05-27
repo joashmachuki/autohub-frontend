@@ -6,6 +6,7 @@ import {
   MessageSquare, 
   CreditCard, 
   LogOut,
+  Wrench,
   Search,
   Check,
   X,
@@ -105,7 +106,8 @@ const AdminPayments = () => {
     { icon: <LayoutDashboard className="w-5 h-5" />, label: 'Dashboard', path: '/Jerry@-2020/dashboard' },
     { icon: <Car className="w-5 h-5" />, label: 'Vehicles', path: '/Jerry@-2020/vehicles' },
     { icon: <MessageSquare className="w-5 h-5" />, label: 'Inquiries', path: '/Jerry@-2020/inquiries' },
-    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/Jerry@-2020/payments', active: true },
+    { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', path: '/Jerry@-2020/payments' },
+    { icon: <Wrench className="w-5 h-5" />, label: 'Spare Parts', path: '/Jerry@-2020/spare-parts' },
   ];
 
   return (

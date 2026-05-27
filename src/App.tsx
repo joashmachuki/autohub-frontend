@@ -14,8 +14,9 @@ import AdminDashboard from './pages/admin/Dashboard';
 import AdminVehicles from './pages/admin/Vehicles';
 import AdminInquiries from './pages/admin/Inquiries';
 import AdminPayments from './pages/admin/Payments';
+import SpareParts from './pages/SpareParts';
+import AdminSpareParts from './pages/admin/SpareParts';
 import './App.css';
-
 function App() {
   return (
     <Router>
@@ -26,9 +27,8 @@ function App() {
           <Route path="/Jerry@-2020/dashboard" element={<AdminDashboard />} />
           <Route path="/Jerry@-2020/vehicles" element={<AdminVehicles />} />
           <Route path="/Jerry@-2020/inquiries" element={<AdminInquiries />} />
-          <Route path="/Jerry@-2020/payments" element={<AdminPayments />} />
-          
-          {/* Public Routes */}
+          <Route path="/spare-parts" element={<SpareParts />} />
+          <Route path="/Jerry@-2020/spare-parts" element={<AdminSpareParts />} />
           <Route path="*" element={
             <>
               <Header />

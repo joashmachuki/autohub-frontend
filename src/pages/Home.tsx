@@ -42,14 +42,16 @@ const Home = () => {
   const fetchFeaturedVehicles = async () => {
     try {
       const newCarsRes = await axios.get(`${API_URL}/vehicles?vehicle_type=car&condition=new&featured=true`);
-      setFeaturedNewCars(newCarsRes.data.slice(0, 4));
+      setFeaturedNewCars(Array.isArray(newCarsRes.data) ? newCarsRes.data.slice(0, 4) : []);
 
       const usedCarsRes = await axios.get(`${API_URL}/vehicles?vehicle_type=car&condition=used&featured=true`);
-      setFeaturedUsedCars(usedCarsRes.data.slice(0, 4));
+      setFeaturedUsedCars(Array.isArray(usedCarsRes.data) ? usedCarsRes.data.slice(0, 4) : []);
 
       const ebikesRes = await axios.get(`${API_URL}/vehicles?vehicle_type=ebike&condition=new`);
       const motorcyclesRes = await axios.get(`${API_URL}/vehicles?vehicle_type=motorcycle&condition=new`);
-      setFeaturedEbikes([...ebikesRes.data, ...motorcyclesRes.data].slice(0, 4));
+      const ebikes = Array.isArray(ebikesRes.data) ? ebikesRes.data : [];
+      const motorcycles = Array.isArray(motorcyclesRes.data) ? motorcyclesRes.data : [];
+      setFeaturedEbikes([...ebikes, ...motorcycles].slice(0, 4));
     } catch (error) {
       console.error('Error fetching vehicles:', error);
     }
